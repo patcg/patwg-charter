@@ -1,5 +1,7 @@
 # patwg-charter
-A repo to discuss the Private Advertising Technology Working Group's charter.
+A repo to discuss the Private Advertising Technology Working Group's charter. 
+
+See the [rendered draft](https://patcg.github.io/patwg-charter/charter.html)
 
 ## Code of Conduct
 
