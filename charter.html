@@ -80,7 +80,7 @@
          motivated by the <a href="https://www.w3.org/2001/tag/doc/ethical-web-principles/">W3C TAG Ethical Web Principles</a>, is to
          specify web features and APIs that support advertising while
          acting in the interests of users, in particular providing strong
-         privacy assurances.  The Working Group welcomes participation from
+         privacy assurances using predominantly technical means.  The Working Group welcomes participation from
          browser vendors, OS vendors, mobile application vendors, advertisers,
          publishers, ad buyers, advertising platforms and intermediaries,
          privacy advocates, web application developers, and other interested
@@ -128,15 +128,21 @@
               Chairs
             </th>
             <td>
-              <i class="todo">[chair name] (affiliation)</i>
+              <ul>
+                <li>Aram Zucker-Scharff (Washington Post)</li>
+                <li>Sean Turner (sn3rd; Invited Expert)</li>
+              </ul>
             </td>
-          </tr>
+         </tr>
           <tr>
             <th>
               Team Contacts
             </th>
             <td>
-              <span class="todo"><a href="mailto:">[team contact name]</a></span> <i class="todo">(0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+              <ul>
+                <li>Sam Weiler</li>
+              </ul>
+              (0.2 <abbr title="Full-Time Equivalent">FTE</abbr>)
             </td>
           </tr>
           <tr>
@@ -154,24 +160,25 @@
       <section id="scope" class="scope">
         <h2>Scope</h2>
         <p>
-            The Working Group will specify new web platform features (new web platform APIs) intended to
-            be implemented in browsers or similar user agents. The purpose of
+            The Working Group will specify new web platform features. The purpose of
             these features is to support web advertising by producing open and standardized 
             protocols without compromising user privacy.  Here "privacy" minimally refers to appropriate
             processing of personal information.  Ways in which new features might
             enable inappropriate processing include (but are not limited to)
             enabling
-            of <a href="https://w3ctag.github.io/privacy-principles/#hl-recognition-cross-site">cross-site
+            of <a href="https://www.w3.org/TR/2023/DNOTE-privacy-principles-20230223/#dfn-cross-site-recognition">cross-site
             or cross context recognition</a> of users or
-            enabling <a href="https://w3ctag.github.io/privacy-principles/#hl-recognition-same-site">same-site
+            enabling <a href="https://www.w3.org/TR/2023/DNOTE-privacy-principles-20230223/#dfn-same-site-recognition">same-site
             or same-context recognition</a> of users across the clearing of
             state.
         </p>
         <p>
-          The Working Group may consider designs that allow user agents for the
-          same user — including non-browser agents, like Operating Systems — to
-          collaborate in providing advertising features by producing open and standardized protocols.
-          </p>
+          The Working Group will produce specifications that are implemented by
+          user agents.  The implementation of specifications in user agents
+          might interoperate with or depend on functionality provided by other
+          entities.  In these cases, the Working Group
+          will <a href="#coordination">coordinate with other organizations</a>
+          to provide specifications for necessary functions by producing open and standardized protocols.
         </p>
 
         <section id="section-out-of-scope">
@@ -209,15 +216,15 @@
           </p>
           <ul>
             <li>Pre-campaign planning</li>
-            <li>Intra-campaign decisioning and optimization</li>
+            <li>Intra-campaign decisioning and optimization, such as:</li>
             <ul>
-              <li>Interest-based ad or content decisioning</li>
-              <li>User List Marketing/Remarketing</li>
-              <li>Fraud detection and prevention</li>
-              <li>Abuse detection and prevention</li>
-              <li>Frequency and recency controls</li>
-              <li>Error reporting and mitigation </li>
-              <li>Device resource management</li>
+              <li>Interest-based ad or content decisioning;</li>
+              <li>User List Marketing/Remarketing;</li>
+              <li>Fraud detection and prevention;</li>
+              <li>Abuse detection and prevention;</li>
+              <li>Frequency and recency controls;</li>
+              <li>Error reporting and mitigation; and </li>
+              <li>Device resource management.</li>
               </ul>
             <li>Post-campaign reporting and attribution
           </ul>
@@ -260,16 +267,19 @@
       Working Draft</a>,
     <a href="https://www.w3.org/2021/Process-20211102/#RecsWD">Working
       Draft</a>,
-    <a href="https://www.w3.org/2021/Process-20211102/#candidate-recommendation-draft">Candidate
-      Recommendation Draft</a>, and
     <a href="https://www.w3.org/2021/Process-20211102/#candidate-recommendation-snapshot">Candidate
-      Recommendation Snapshot</a>.
-    It is expected that to reach the Candidate Recommendation Snapshot stage, each normative
-    specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
+      Recommendation Snapshot</a>, and <a href="https://www.w3.org/2021/Process-20211102/#candidate-recommendation-draft">Candidate
+      Recommendation Draft</a>. The WG does not intend to publish specifications as <a href="https://www.w3.org/2021/Process-20211102/#RecsPR">Proposed Recommendations</a>.
+
+          <p>To reach the Candidate Recommendation Snapshot stage, each normative
+            specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at
+              least two independent implementations</a> of every feature defined in the specification.
+            Interoperability of implementations will be verified by passing open test suites.
 
           <p>Each normative specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
 
-          <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+          <p>There shall be a testing plan and open test suite developed that covers all functional
+          aspects of normative specifications developed by the WG.
 
     <p>Normative specifications which have user-facing features should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximizing accessibility in implementations.</p>
         </section>
@@ -374,6 +384,8 @@ To be successful, this Working Group is expected to have 6 or more active partic
         <p>
           At the discretion of the Chairs and subject to a consensus call, the Working Group may designate a Design Team to study a particular subject, and report back to the Working Group their findings and a recommendation. These Design Teams shall consist of a small group of volunteers who commit to investing significant amounts of time on the task over a short, time-bound, period.
         </p>
+        <p>Design Teams operate under the same policies as the Working Group.
+For example, the same IPR commitments apply to Design Team contributions as Working Group contributions.</p>
         <p>
           This Working Group primarily conducts its technical work in the PATWG GitHub repository, which is configured to send all issues and pull requests to the public mailing list: public-[email-list]@w3.org (archive). The public is invited to review, discuss and contribute to this work.         </p>
         <p>
