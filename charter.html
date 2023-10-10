@@ -304,10 +304,16 @@
 
     <p>To promote interoperability, all changes made to specifications in Candidate Recommendation or to features that have deployed implementations should have tests. Testing efforts should be conducted via the Web Platform Tests project.</p>
     
-    <p>Each specification should contain sections detailing security and privacy implications for implementers, Web authors, and end users, as well as recommendations for mitigation. There should be a clear description of the residual risk to the user or operator of that protocol after threat mitigation has been deployed.</p>
-    
+    <p>Each specification should contain sections detailing all known security and
+      privacy implications for implementers, Web authors, and end users.</p>
+
     <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximizing accessibility in implementations.</p>
     
+    <!-- Design principles -->
+    <p>This Working Group expects to follow the
+      TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.
+    </p>
+
     <p>All new features should have expressions of interest from at least two potential implementors before being incorporated in the specification.</p>
     
     <p>In considering features, the group will state, during the development of those features or in the text of the document, privacy implications. Proposals should clearly state privacy issues, how they intend to address those issues, and the advertising use cases addressed in each deliverable.</p>
@@ -316,7 +322,7 @@
       <section id="coordination">
         <h2>Coordination</h2>
         <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
-          accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          accessibility, internationalization, privacy, and security with the relevant Working and
           Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
           Invitation for review must be issued during each major standards-track document transition, including
           <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
@@ -412,13 +418,11 @@ To be successful, this Working Group is expected to have 6 or more active partic
         </p>
         <p>Task forces operate under the same policies as the Working Group.</p>
         <p>
-          This Working Group primarily conducts its technical work in the PATWG GitHub repository, which is configured to send all issues and pull requests to the public mailing list: public-[email-list]@w3.org (archive). The public is invited to review, discuss and contribute to this work.         </p>
+          This Working Group primarily conducts its technical work in the PATWG GitHub repository, which is configured to send all issues and pull requests to the public mailing list: <span class='todo'>public-[email-list]@w3.org</span> (archive). The public is invited to review, discuss and contribute to this work.         </p>
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
         </p>
       </section>
-
-
 
       <section id="decisions">
         <h2>
@@ -470,7 +474,7 @@ To be successful, this Working Group is expected to have 6 or more active partic
         <p>
           All decisions made by the Working Group should be considered resolved
           unless and until new information becomes available or unless reopened
-          at the discretion of the Chairs or the Director.
+          at the discretion of the Chairs.
         </p>
         <p>
           This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document
